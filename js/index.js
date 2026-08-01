@@ -1,17 +1,4 @@
 // Not Added Feature
-function errorNA(text) {
-    clearTimeout()
-    document.getElementById('errortext').innerHTML = "The " + text + " feature hasn't been made yet."
-    document.getElementById('naerror').style.display = 'block';
-    setTimeout(function(){
-        document.getElementById('naerror').classList.add('zoom-out');
-    }, 3000);
-    setTimeout(function(){
-        document.getElementById('naerror').classList.remove('zoom-out');
-        document.getElementById('naerror').style.display = 'none';
-        document.getElementById('errortext').innerHTML = "This feature hasn't been made yet."
-    }, 3200);
-}
 
 // Last Played Game Option
 let selectedGame1 = localStorage.getItem("basegame");
